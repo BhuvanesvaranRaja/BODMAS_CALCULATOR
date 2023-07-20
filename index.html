@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>CALCULATOR</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="output">
+        <div id="history_out">
+          <ul id="ul">
+            <!-- history elements -->
+            <li style="visibility: hidden;">123654</li>
+
+          </ul>
+        </div>
+        <input
+          type="text"
+          name="display"
+          id="disp_out">
+        <!-- onkeypress="return validateInput(event)" /> -->
+      </div>
+      <input
+        type="button"
+        value="AC"
+        class="text-white bg-danger span-two fw-bold"
+        onclick="ClearAll()" />
+      <input
+        type="button"
+        value="D"
+        class="text-white bg-danger fw-bold"
+        onclick="send('delete')" />
+      <input
+        type="button"
+        value="/"
+        class="text-white bg-danger fw-bold"
+        onclick="send('/')" />
+
+      <input type="button" value="1" onclick="send(1)" />
+      <input type="button" value="2" onclick="send(2)" />
+      <input type="button" value="3" onclick="send(3)" />
+      <input
+        type="button"
+        value="*"
+        class="text-white bg-danger fw-bold"
+        onclick="send('*')" />
+      <input type="button" value="4" onclick="send(4)" />
+      <input type="button" value="5" onclick="send(5)" />
+      <input type="button" value="6" onclick="send(6)" />
+      <input
+        type="button"
+        value="-"
+        class="text-white bg-danger fw-bold"
+        onclick="send('-')" />
+      <input type="button" value="7" onclick="send(7)" />
+      <input type="button" value="8" onclick="send(8)" />
+      <input type="button" value="9" onclick="send(9)" />
+      <input
+        type="button"
+        value="+"
+        class="text-white bg-danger fw-bold"
+        onclick="send('+')" />
+      <input type="button" value="0" onclick="send(0)" />
+      <input
+        type="button"
+        value="."
+        class="text-white bg-danger fw-bold"
+        onclick="send('.')" />
+
+      <input
+        type="button"
+        value="%"
+        class="text-white bg-danger fw-bold"
+        onclick="send('%')" />
+
+      <input
+        type="button"
+        value="^"
+        class="text-white bg-danger fw-bold"
+        onclick="send('^')" />
+
+      <input
+        type="button"
+        value="√x"
+        class="text-white bg-danger fw-bold"
+        onclick="send('√')" />
+      <input
+        type="button"
+        value="("
+        class="text-white bg-danger fw-bold"
+        onclick="send('(')" />
+      <input
+        type="button"
+        value=")"
+        class="text-white bg-danger fw-bold"
+        onclick="send(')')" />
+
+      <input
+        type="button"
+        value="="
+        class="text-white bg-danger span-two span-three fw-bolder"
+        id="sq"
+        onclick="Calci()" />
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!-- <script src="./index.js"></script> -->
+  <script src="./calculator.js"></script>
+</html>

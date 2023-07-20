@@ -1,0 +1,132 @@
+#output {
+  height: 200px;
+  /* background-color: aquamarine; */
+  margin-bottom: 20px;
+}
+body {
+  height: 88vh;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+input[type="button"] {
+  padding: 10px;
+  border: none;
+  font-size: 2.1rem;
+  background-color: #535353;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+input[type="button"]:hover {
+  background-color: rgb(248, 248, 248);
+
+  color: black;
+}
+.span-two {
+  grid-column: span 2;
+}
+.span-three {
+  grid-column: span 1 !important;
+}
+#disp_out {
+  height: 200px;
+  width: 100%;
+  background-color: #535353;
+  text-align: right;
+  font-size: 50px !important;
+  color: #3db07d !important;
+  font-weight: 700;
+  letter-spacing: 4px;
+  border: 1px solid #535353;
+  outline: none;
+}
+#history_out {
+  width: 100%;
+  height: 150px;
+  background-color: #dcd9d4;
+  text-align: left;
+  font-size: 23px !important;
+  color: #535353 !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 1px solid #535353;
+  outline: none;
+  border-radius: 5px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+#sq {
+  background-color: rgba(240, 192, 37, 0.979) !important;
+}
+.bg-danger {
+  background-color: #3db07d !important;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: #535353;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10px;
+  font-size: 30px;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 10px;
+}
+
+#ul li {
+  line-height: 30px;
+  list-style: none;
+  color: tomato;
+  letter-spacing: 3px;
+}
+#ul li:first-child {
+  color: green;
+}
+/* Hide the scrollbar track */
+/* Hide the default scrollbar for the history_out element */
+#history_out::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track for the history_out element */
+#history_out::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle for the history_out element */
+#history_out::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #06772c, #ff6b6b);
+  border-radius: 10px;
+}
+
+/* Handle on hover for the history_out element */
+#history_out::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #1b7013, #ed553b);
+}
