@@ -1,4 +1,4 @@
-# BODMAS_CALCULATOR using HTML,CSS,JAVASCRIPT,BOOTSTRAP 5.2 
+# CALCULATOR using HTML , CSS , JAVASCRIPT , BOOTSTRAP 5.2 
 Overview:
 This GitHub repository houses a feature-rich calculator built to handle complex arithmetic expressions while strictly adhering to the BODMAS (Brackets, Order, Division and Multiplication, Addition and Subtraction) rule. Designed with a sleek and user-friendly interface, our calculator empowers users to tackle intricate mathematical computations with confidence.
 
